@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RedditFindit</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-primary mb-3">
+        <div class="container">
+            <span class="navbar-brand">RedditFindit</span>
+        </div>
+    </nav>
+    <div id="search-container" class="container">
+        <h5>Findit</h5>
+        <div id="search" class="card card-body bg-light mb-2">
+            <form action="" id="search-form">
+                <div class="form-group">
+                    <input type="text" name="" id="search-input" placeholder="Search" class="form-control mb-3">
+
+                </div>
+                <div class="form-check form-check-inline">
+                    Sort By 
+                    <input type="radio" name="sortby" id="" class="form-check-input ml-2" checked>
+                    <label for="" class="form check-label">
+                        Relevance
+                    </label>
+                </div>
+                <div class="form-check form-check-inline">
+
+                    <input type="radio" name="sortby" id="" class="form-check-input ml-2" checked>
+                    <label for="" class="form check-label">
+                        Latest
+                    </label>
+                </div>
+                <h5 class="mt-2">Limit:</h5>
+                <div class="form-group">
+                    <select name="limit" id="limit" class="form-control">
+                        <option value="5">5</option>
+                        <option value="10">10</option>
+                        <option value="15">15</option>
+                        <option value="20">20</option>
+                        <option value="25">25</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-dark btn-block mt-4">Search</button>
+            </form>
+        </div>
+        <div id="results" class="container">
+            
+        </div>
+
+    </div>
+</body>
+<script src="./index.js"></script>
+
+</html>
